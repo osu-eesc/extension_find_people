@@ -1,0 +1,197 @@
+/*----------------General----------------*/
+
+.float-right {
+  float: right;
+}
+
+
+/*----------------Employee Nodes----------------*/
+
+.node-type-employee .employee-graphical-content {
+  margin: 0 0 15px 15px;
+}
+
+.node-type-employee .photo,
+.node-type-employee .employee-map .view-content {
+  background-color: #F1F1F1;
+  padding: 5px;
+  border: 1px solid #D2D2D2;
+}
+
+.node-type-employee .photo {
+  float: right;
+}
+
+.node-type-employee .employee-map {
+  margin-bottom: 10px;
+}
+
+.node-type-employee .photo img,
+.node-type-employee .view-find-people-employee-locations.view-display-id-node_content_2 .openlayers-views-map {
+  border: 1px solid #9E9E9E;
+}
+
+.node-type-employee .content-inner .title {
+  margin-bottom: 0;
+}
+
+.node-type-employee .employee-titles {
+  text-transform: capitalize;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.node-type-employee .label {
+  font-weight: bold;
+}
+
+.node-type-employee .view-find-people-employee-locations.view-display-id-node_content_4 .views-label-field-group-fax-value {
+  font-weight: bold;
+}
+
+.node-type-employee .view-find-people-employee-locations.view-display-id-node_content_1,
+.node-type-employee .view-find-people-employee-locations.view-display-id-node_content_3 {
+  margin-left: 10px;
+}
+
+.node-type-employee .employee-locations,
+.node-type-employee .employee-bio {
+  margin-top: 20px;
+}
+
+.node-type-employee .secondary_locations_label {
+  margin-top: 10px;
+}
+
+
+/*----------------Group Nodes----------------*/
+
+.node-type-group .content-inner .title {
+  margin-bottom: 0;
+}
+
+.node-type-group .group-map .view-content {
+  background-color: #F1F1F1;
+  padding: 5px;
+  border: 1px solid #D2D2D2;
+}
+
+.node-type-group .view-find-people-group-locations.view-display-id-node_content_2 .openlayers-views-map {
+  border: 1px solid #9E9E9E;
+}
+
+.node-type-group .address-name {
+  font-weight: bold;
+}
+
+.node-type-group .label {
+  font-weight: bold;
+}
+
+.node-type-group .contact-info,
+.node-type-group .website {
+  margin-top: 10px;
+}
+
+.node-type-group .bio-label {
+  clear: both;
+}
+
+.node-type-group .view-find-people-group-locations .views-field-title {
+  font-weight: bold;
+}
+
+.node-type-group .view-find-people-group-locations .views-field-field-employee-titles-value {
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.node-type-group .view-find-people-group-locations .views-field-field-employee-office-phone-value {
+  margin-top: 10px;
+}
+
+.node-type-group .view-find-people-group-locations .views-label-field-employee-office-phone-value {
+  font-weight: bold;
+}
+
+.node-type-group .dotted-line {
+  padding: 0;
+  margin: 0.75em 0 1em;
+}
+
+
+
+/*----------------Find Us Page----------------*/
+
+.page-find-us .view-find-us-page td {
+  padding: 0;
+}
+
+.page-find-us .view-find-us-page .col-1,
+.page-find-us .view-find-us-page .views-row {
+  padding-left: 15px;
+}
+
+.page-find-us .view-display-id-attachment_5 {
+  float: right;
+}
+
+.page-find-us .view-display-id-attachment_5 .view-content {
+  border: 1px solid #9E9E9E;
+}
+
+.page-find-us .view-find-us-page h3 {
+  clear: both;
+}
+
+.page-find-us .extension-address {
+  float: left;
+}
+
+.page-find-us .extension-address .title {
+  font-weight: bold;
+}
+
+.page-find-us .extension-address .address {
+  margin-bottom: 10px;
+}
+
+/* 3 column for find-us search page */
+#view-id-find_us_search-page_1  ul {
+	width: 600px;
+	margin: 0;
+	overflow: hidden;
+}
+#view-id-find_us_search-page_1  li {
+	float: left;
+	display: inline;
+}
+
+#view-id-find_us_search-page_1  li	{ 
+  width: 33.333%; 
+}
+
+#view-id-find_us_search-page_1 .attachment  li	{ 
+  width: 50%; 
+}
+
+#views-exposed-form-find-us-search-page-1 div.views-exposed-widget label {
+  font-weight: normal;
+}
+
+#edit-submit-find-us-search.form-submit {
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+  text-indent: -9999px;
+  border: none;
+  background: url(search-icon.png) no-repeat left top;
+}
+
+#views-exposed-form-find-us-search-page-1 div div.views-exposed-form div.views-exposed-widgets div.views-exposed-widget {
+  padding-right: 0;
+}
+
+#views-exposed-form-find-us-search-page-1 input#edit-title.form-text {
+  width: 200px;
+}
