@@ -3695,7 +3695,6 @@ function extension_find_people_views_default_views() {
   $handler->override_option('title', 'Find Us Results');
   $handler->override_option('header_format', '3');
   $handler->override_option('header_empty', 0);
-  $handler->override_option('use_ajax', TRUE);
   $handler->override_option('items_per_page', 0);
   $handler->override_option('use_pager', '0');
   $handler->override_option('style_plugin', 'list');
