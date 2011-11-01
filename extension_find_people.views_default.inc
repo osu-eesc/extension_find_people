@@ -1989,6 +1989,17 @@ function extension_find_people_views_default_views() {
     ),
   ));
   $handler->override_option('sorts', array(
+    'field_employee_leader_value' => array(
+      'order' => 'DESC',
+      'delta' => -1,
+      'id' => 'field_employee_leader_value',
+      'table' => 'node_data_field_employee_leader',
+      'field' => 'field_employee_leader_value',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
     'field_employee_last_name_value' => array(
       'order' => 'ASC',
       'delta' => -1,
@@ -3604,12 +3615,94 @@ function extension_find_people_views_default_views() {
     ),
   ));
   $handler->override_option('sorts', array(
+    'field_employee_leader_value' => array(
+      'order' => 'DESC',
+      'delta' => -1,
+      'id' => 'field_employee_leader_value',
+      'table' => 'node_data_field_employee_leader',
+      'field' => 'field_employee_leader_value',
+      'relationship' => 'none',
+    ),
     'type' => array(
       'order' => 'ASC',
       'id' => 'type',
       'table' => 'node',
       'field' => 'type',
       'relationship' => 'none',
+    ),
+    'title' => array(
+      'order' => 'ASC',
+      'id' => 'title',
+      'table' => 'node',
+      'field' => 'title',
+      'relationship' => 'none',
+    ),
+  ));
+  $handler->override_option('arguments', array(
+    'null' => array(
+      'default_action' => 'default',
+      'style_plugin' => 'default_summary',
+      'style_options' => array(),
+      'wildcard' => 'all',
+      'wildcard_substitution' => 'All',
+      'title' => '',
+      'breadcrumb' => '',
+      'default_argument_type' => 'php',
+      'default_argument' => '',
+      'validate_type' => 'none',
+      'validate_fail' => 'empty',
+      'must_not_be' => 0,
+      'id' => 'null',
+      'table' => 'views',
+      'field' => 'null',
+      'validate_user_argument_type' => 'uid',
+      'validate_user_roles' => array(
+        '2' => 0,
+        '5' => 0,
+        '4' => 0,
+        '3' => 0,
+        '8' => 0,
+        '6' => 0,
+      ),
+      'relationship' => 'none',
+      'default_options_div_prefix' => '',
+      'default_argument_fixed' => '',
+      'default_argument_user' => 0,
+      'default_argument_php' => 'if (count($view->exposed_input)) {
+return TRUE;
+}',
+      'validate_argument_node_type' => array(
+        'announcements' => 0,
+        'calendar_event' => 0,
+        'community' => 0,
+        'community_links' => 0,
+        'community_page_story' => 0,
+        'employee' => 0,
+        'group' => 0,
+        'news_feed_item' => 0,
+        'extension_page' => 0,
+        'social_media' => 0,
+        'extension_story' => 0,
+        'gallery' => 0,
+        'header_top_link' => 0,
+        'home_slideshow' => 0,
+        'latest_news_feed' => 0,
+        'letterhead' => 0,
+        'publication' => 0,
+        'webform' => 0,
+      ),
+      'validate_argument_node_access' => 0,
+      'validate_argument_nid_type' => 'nid',
+      'validate_argument_vocabulary' => array(
+        '5' => 0,
+        '4' => 0,
+        '1' => 0,
+        '2' => 0,
+      ),
+      'validate_argument_type' => 'tid',
+      'validate_argument_transform' => 0,
+      'validate_user_restrict_roles' => 0,
+      'validate_argument_php' => '',
     ),
   ));
   $handler->override_option('filters', array(
@@ -3695,6 +3788,8 @@ function extension_find_people_views_default_views() {
   $handler->override_option('title', 'Find Us Results');
   $handler->override_option('header_format', '3');
   $handler->override_option('header_empty', 0);
+  $handler->override_option('empty_format', '3');
+  $handler->override_option('use_ajax', TRUE);
   $handler->override_option('items_per_page', 0);
   $handler->override_option('use_pager', '0');
   $handler->override_option('style_plugin', 'list');
@@ -3703,16 +3798,6 @@ function extension_find_people_views_default_views() {
     'type' => 'ul',
   ));
   $handler = $view->new_display('page', 'Page', 'page_1');
-  $handler->override_option('header', '<?php
-if ($_GET[\'title\'] != \'\') : ?>
-<div class="results-text">Your results for the search <strong>"<?php print $_GET[\'title\'] ; ?>"</strong></div>
-<?php endif; ?>');
-  $handler->override_option('empty', '<?php
-if ($_GET[\'title\'] != \'\') {
-  print "Oops. No records found for <strong>" . $_GET[\'title\'] . "</strong>" ;
-}
-?>');
-  $handler->override_option('empty_format', '3');
   $handler->override_option('exposed_block', TRUE);
   $handler->override_option('path', 'find-us/results');
   $handler->override_option('menu', array(
@@ -3920,6 +4005,115 @@ if ($_GET[\'title\'] != \'\') {
     'page_1' => 'page_1',
     'default' => 0,
     'block_1' => 0,
+  ));
+  $handler = $view->new_display('attachment', 'header_empty_text', 'attachment_2');
+  $handler->override_option('fields', array(
+    'nothing' => array(
+      'label' => '',
+      'alter' => array(
+        'text' => ' ',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'exclude' => 0,
+      'id' => 'nothing',
+      'table' => 'views',
+      'field' => 'nothing',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
+  $handler->override_option('filters', array(
+    'status' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'status',
+      'table' => 'node',
+      'field' => 'status',
+      'relationship' => 'none',
+    ),
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'employee' => 'employee',
+        'group' => 'group',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+    ),
+    'title' => array(
+      'operator' => 'contains',
+      'value' => '',
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'title_op',
+        'identifier' => 'title',
+        'label' => 'Search for people, programs, departments.',
+        'optional' => 0,
+        'remember' => 0,
+      ),
+      'case' => 0,
+      'id' => 'title',
+      'table' => 'node',
+      'field' => 'title',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+  ));
+  $handler->override_option('header', '<?php
+if ($_GET[\'title\'] != \'\') : ?>
+<div class="results-text">Your results for the search <strong>"<?php print $_GET[\'title\'] ; ?>"</strong></div>
+<?php endif; ?>');
+  $handler->override_option('empty', '<?php
+  $view = views_get_current_view();
+  if (count($view->exposed_input)) {
+    return "Sorry, no results were found.  Please adjust your search criteria and try again.";
+  }
+?>');
+  $handler->override_option('items_per_page', 1);
+  $handler->override_option('attachment_position', 'before');
+  $handler->override_option('inherit_arguments', TRUE);
+  $handler->override_option('inherit_exposed_filters', 1);
+  $handler->override_option('inherit_pager', FALSE);
+  $handler->override_option('render_pager', TRUE);
+  $handler->override_option('displays', array(
+    'page_1' => 'page_1',
+    'default' => 0,
   ));
 
   $views[$view->name] = $view;

@@ -11,7 +11,7 @@ function extension_find_people_content_default_fields() {
     'field_name' => 'field_employee_biography',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '7',
+      'weight' => '5',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -78,7 +78,7 @@ function extension_find_people_content_default_fields() {
     'field_name' => 'field_employee_email',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '3',
+      'weight' => '1',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -139,7 +139,7 @@ function extension_find_people_content_default_fields() {
     'field_name' => 'field_employee_employer',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '-3',
+      'weight' => '8',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -196,7 +196,7 @@ College of Agricultural Sciences',
       'rows' => '5',
       'size' => 60,
       'label' => 'Employer',
-      'weight' => '7',
+      'weight' => '8',
       'description' => 'Indicate who this person is employed by.',
       'type' => 'optionwidgets_select',
       'module' => 'optionwidgets',
@@ -275,7 +275,7 @@ College of Agricultural Sciences',
     'field_name' => 'field_employee_groups',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => 0,
+      'weight' => '-1',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -358,18 +358,18 @@ College of Agricultural Sciences',
     'field_name' => 'field_employee_is_supervisor',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '8',
+      'weight' => '7',
       'parent' => '',
       'label' => array(
-        'format' => 'above',
+        'format' => 'hidden',
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       '5' => array(
         'format' => 'default',
@@ -413,7 +413,7 @@ College of Agricultural Sciences',
       ),
       'default_value_php' => NULL,
       'label' => 'Supervisor',
-      'weight' => '6',
+      'weight' => '7',
       'description' => '',
       'type' => 'optionwidgets_onoff',
       'module' => 'optionwidgets',
@@ -425,7 +425,7 @@ College of Agricultural Sciences',
     'field_name' => 'field_employee_last_name',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '-1',
+      'weight' => '-3',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -487,12 +487,79 @@ College of Agricultural Sciences',
     ),
   );
 
+  // Exported field: field_employee_leader
+  $fields['employee-field_employee_leader'] = array(
+    'field_name' => 'field_employee_leader',
+    'type_name' => 'employee',
+    'display_settings' => array(
+      'weight' => '6',
+      'parent' => '',
+      'label' => array(
+        'format' => 'hidden',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'number_integer',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'number',
+    'active' => '1',
+    'prefix' => '',
+    'suffix' => '',
+    'min' => '',
+    'max' => '',
+    'allowed_values' => '0|No
+1|Administrator, Dept. Head, Unit Leader',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => 1,
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Admin/Leader',
+      'weight' => '6',
+      'description' => '',
+      'type' => 'optionwidgets_onoff',
+      'module' => 'optionwidgets',
+    ),
+  );
+
   // Exported field: field_employee_mobile_phone
   $fields['employee-field_employee_mobile_phone'] = array(
     'field_name' => 'field_employee_mobile_phone',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '5',
+      'weight' => '3',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -614,7 +681,7 @@ College of Agricultural Sciences',
       ),
       'default_value_php' => NULL,
       'label' => 'Notes',
-      'weight' => '10',
+      'weight' => '11',
       'description' => '',
       'type' => 'text_textarea',
       'module' => 'text',
@@ -626,7 +693,7 @@ College of Agricultural Sciences',
     'field_name' => 'field_employee_office_phone',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '4',
+      'weight' => '2',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -693,7 +760,7 @@ College of Agricultural Sciences',
     'field_name' => 'field_employee_photo',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '2',
+      'weight' => 0,
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -828,7 +895,7 @@ Retired',
       ),
       'default_value_php' => NULL,
       'label' => 'Status',
-      'weight' => '8',
+      'weight' => '9',
       'description' => '',
       'type' => 'optionwidgets_select',
       'module' => 'optionwidgets',
@@ -840,7 +907,7 @@ Retired',
     'field_name' => 'field_employee_titles',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '1',
+      'weight' => '-2',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -907,7 +974,7 @@ Retired',
     'field_name' => 'field_employee_website',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '6',
+      'weight' => '4',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -2139,6 +2206,7 @@ off|Off Campus',
   t('Abbreviation');
   t('Address Line 1');
   t('Address Line 2');
+  t('Admin/Leader');
   t('Biography');
   t('Business Hours');
   t('Category');

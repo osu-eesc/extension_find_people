@@ -201,18 +201,19 @@ function extension_find_people_strongarm() {
   $strongarm->name = 'content_extra_weights_employee';
   $strongarm->value = array(
     'title' => '-5',
-    'revision_information' => '9',
-    'author' => '18',
-    'options' => '17',
-    'menu' => '19',
-    'book' => '20',
-    'path' => '16',
-    'path_redirect' => '11',
-    'find_people_employee_locations_node_content_2' => '12',
-    'find_people_employee_locations_node_content_1' => '14',
-    'find_people_employee_locations_node_content_3' => '13',
-    'find_people_employee_locations_node_content_4' => '15',
-    'xmlsitemap' => '21',
+    'revision_information' => '10',
+    'author' => '19',
+    'options' => '18',
+    'comment_settings' => '23',
+    'menu' => '20',
+    'book' => '21',
+    'path' => '17',
+    'path_redirect' => '12',
+    'find_people_employee_locations_node_content_2' => '13',
+    'find_people_employee_locations_node_content_1' => '15',
+    'find_people_employee_locations_node_content_3' => '14',
+    'find_people_employee_locations_node_content_4' => '16',
+    'xmlsitemap' => '22',
   );
   $export['content_extra_weights_employee'] = $strongarm;
 
