@@ -115,7 +115,7 @@
             print '<div class="primary_location_label label">Primary Location</div>' . $node->content['find_people_employee_locations_node_content_1']['#value'];
           }
           if ($node->content['find_people_employee_locations_node_content_3']['#value']){
-            print '<div class="secondary_locations_label label">Secondary Locations</div>' . $node->content['find_people_employee_locations_node_content_3']['#value'];
+            print '<div class="secondary_locations_label label">Secondary Location(s)</div>' . $node->content['find_people_employee_locations_node_content_3']['#value'];
           }
         ?>
       </div> <!-- /employee-locations -->
