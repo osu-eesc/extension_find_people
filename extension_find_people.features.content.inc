@@ -884,7 +884,7 @@ College of Agricultural Sciences',
     'text_processing' => '0',
     'max_length' => '',
     'allowed_values' => 'Current Employee
-
+Former
 Retired',
     'allowed_values_php' => '',
     'widget' => array(
