@@ -195,3 +195,8 @@
 #views-exposed-form-find-us-search-page-1 input#edit-title.form-text {
   width: 200px;
 }
+
+div.update-link {
+  margin-top: 2.0em;
+  text-align: right;
+}

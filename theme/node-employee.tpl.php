@@ -153,6 +153,12 @@
           }
         }
       ?>
+      
+      <?php 
+        $request_url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+        $update_link = 'http://extension.oregonstate.edu/find-us/update-form?update_type=employee&request_url=' . $request_url;
+        print '<div class="update-link">Incorrect or outpdated information? <a href="' . $update_link . '">Let us know</a>. </div>';
+      ?>
 
     </div> <!-- /content clearfix -->
   
