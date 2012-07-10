@@ -11,10 +11,9 @@ function extension_find_people_views_default_views() {
   $view->name = 'find_people_employee_locations';
   $view->description = 'Adds locations to employee pages';
   $view->tag = '';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
@@ -148,11 +147,11 @@ function extension_find_people_views_default_views() {
       'field' => 'nid',
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
-        '2' => 0,
-        '5' => 0,
-        '4' => 0,
-        '3' => 0,
-        '6' => 0,
+        2 => 0,
+        5 => 0,
+        4 => 0,
+        3 => 0,
+        6 => 0,
       ),
       'relationship' => 'none',
       'default_options_div_prefix' => '',
@@ -180,10 +179,10 @@ function extension_find_people_views_default_views() {
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '5' => 0,
-        '4' => 0,
-        '1' => 0,
-        '2' => 0,
+        5 => 0,
+        4 => 0,
+        1 => 0,
+        2 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -547,7 +546,7 @@ function extension_find_people_views_default_views() {
     'employee' => 'employee',
   ));
   $handler->override_option('modes', array(
-    '0' => 'full',
+    0 => 'full',
   ));
   $handler->override_option('argument_mode', 'none');
   $handler->override_option('default_argument', '');
@@ -1001,11 +1000,11 @@ function extension_find_people_views_default_views() {
       'field' => 'nid',
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
-        '2' => 0,
-        '5' => 0,
-        '4' => 0,
-        '3' => 0,
-        '6' => 0,
+        2 => 0,
+        5 => 0,
+        4 => 0,
+        3 => 0,
+        6 => 0,
       ),
       'relationship' => 'none',
       'default_options_div_prefix' => '',
@@ -1033,10 +1032,10 @@ function extension_find_people_views_default_views() {
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '5' => 0,
-        '4' => 0,
-        '1' => 0,
-        '2' => 0,
+        5 => 0,
+        4 => 0,
+        1 => 0,
+        2 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -1062,11 +1061,11 @@ function extension_find_people_views_default_views() {
       'field' => 'nid',
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
-        '2' => 0,
-        '5' => 0,
-        '4' => 0,
-        '3' => 0,
-        '6' => 0,
+        2 => 0,
+        5 => 0,
+        4 => 0,
+        3 => 0,
+        6 => 0,
       ),
       'override' => array(
         'button' => 'Use default',
@@ -1107,10 +1106,10 @@ function extension_find_people_views_default_views() {
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '5' => 0,
-        '4' => 0,
-        '1' => 0,
-        '2' => 0,
+        5 => 0,
+        4 => 0,
+        1 => 0,
+        2 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -1142,7 +1141,7 @@ function extension_find_people_views_default_views() {
     'employee' => 'employee',
   ));
   $handler->override_option('modes', array(
-    '0' => 'full',
+    0 => 'full',
   ));
   $handler->override_option('argument_mode', 'nid');
   $handler->override_option('default_argument', '');
@@ -1221,7 +1220,7 @@ function extension_find_people_views_default_views() {
     'employee' => 'employee',
   ));
   $handler->override_option('modes', array(
-    '0' => 'full',
+    0 => 'full',
   ));
   $handler->override_option('argument_mode', 'nid');
   $handler->override_option('default_argument', '');
@@ -1303,11 +1302,11 @@ function extension_find_people_views_default_views() {
       'field' => 'nid',
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
-        '2' => 0,
-        '5' => 0,
-        '4' => 0,
-        '3' => 0,
-        '6' => 0,
+        2 => 0,
+        5 => 0,
+        4 => 0,
+        3 => 0,
+        6 => 0,
       ),
       'relationship' => 'none',
       'default_options_div_prefix' => '',
@@ -1335,10 +1334,10 @@ function extension_find_people_views_default_views() {
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '5' => 0,
-        '4' => 0,
-        '1' => 0,
-        '2' => 0,
+        5 => 0,
+        4 => 0,
+        1 => 0,
+        2 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -1371,7 +1370,7 @@ function extension_find_people_views_default_views() {
     'employee' => 'employee',
   ));
   $handler->override_option('modes', array(
-    '0' => 'full',
+    0 => 'full',
   ));
   $handler->override_option('argument_mode', 'nid');
   $handler->override_option('default_argument', '');
@@ -1383,10 +1382,9 @@ function extension_find_people_views_default_views() {
   $view->name = 'find_people_group_locations';
   $view->description = 'Adds locations to group pages';
   $view->tag = '';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
@@ -1520,11 +1518,11 @@ function extension_find_people_views_default_views() {
       'field' => 'nid',
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
-        '2' => 0,
-        '5' => 0,
-        '4' => 0,
-        '3' => 0,
-        '6' => 0,
+        2 => 0,
+        5 => 0,
+        4 => 0,
+        3 => 0,
+        6 => 0,
       ),
       'relationship' => 'none',
       'default_options_div_prefix' => '',
@@ -1552,10 +1550,10 @@ function extension_find_people_views_default_views() {
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '5' => 0,
-        '4' => 0,
-        '1' => 0,
-        '2' => 0,
+        5 => 0,
+        4 => 0,
+        1 => 0,
+        2 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -1769,17 +1767,58 @@ function extension_find_people_views_default_views() {
     'group' => 'group',
   ));
   $handler->override_option('modes', array(
-    '0' => 'full',
+    0 => 'full',
   ));
   $handler->override_option('argument_mode', 'none');
   $handler->override_option('default_argument', '');
   $handler = $view->new_display('node_content', 'Employees in Group', 'node_content_1');
   $handler->override_option('fields', array(
-    'title' => array(
+    'field_employee_photo_fid' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 0,
-        'text' => '',
+        'text' => '<img src="[field_employee_photo_fid]" class="photo" />',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 1,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'none',
+      'format' => 'thumbnail_100_default',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 0,
+      'id' => 'field_employee_photo_fid',
+      'table' => 'node_data_field_employee_photo',
+      'field' => 'field_employee_photo_fid',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
+    'title' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 1,
+        'text' => '<h3>[title]</h3>',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -2000,6 +2039,16 @@ function extension_find_people_views_default_views() {
       ),
       'relationship' => 'none',
     ),
+    'sticky' => array(
+      'order' => 'DESC',
+      'id' => 'sticky',
+      'table' => 'node',
+      'field' => 'sticky',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
     'field_employee_last_name_value' => array(
       'order' => 'ASC',
       'delta' => -1,
@@ -2043,11 +2092,11 @@ function extension_find_people_views_default_views() {
       'field' => 'field_employee_groups_nid',
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
-        '2' => 0,
-        '5' => 0,
-        '4' => 0,
-        '3' => 0,
-        '6' => 0,
+        2 => 0,
+        5 => 0,
+        4 => 0,
+        3 => 0,
+        6 => 0,
       ),
       'override' => array(
         'button' => 'Use default',
@@ -2078,10 +2127,10 @@ function extension_find_people_views_default_views() {
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '5' => 0,
-        '4' => 0,
-        '1' => 0,
-        '2' => 0,
+        5 => 0,
+        4 => 0,
+        1 => 0,
+        2 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -2108,6 +2157,7 @@ function extension_find_people_views_default_views() {
       'relationship' => 'none',
     ),
   ));
+  $handler->override_option('css_class', 'photo');
   $handler->override_option('style_plugin', 'default');
   $handler->override_option('style_options', array());
   $handler->override_option('row_options', array(
@@ -2119,7 +2169,7 @@ function extension_find_people_views_default_views() {
     'group' => 'group',
   ));
   $handler->override_option('modes', array(
-    '0' => 'full',
+    0 => 'full',
   ));
   $handler->override_option('argument_mode', 'nid');
   $handler->override_option('default_argument', '');
@@ -2144,11 +2194,11 @@ function extension_find_people_views_default_views() {
       'field' => 'nid',
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
-        '2' => 0,
-        '5' => 0,
-        '4' => 0,
-        '3' => 0,
-        '6' => 0,
+        2 => 0,
+        5 => 0,
+        4 => 0,
+        3 => 0,
+        6 => 0,
       ),
       'relationship' => 'none',
       'default_options_div_prefix' => '',
@@ -2176,10 +2226,10 @@ function extension_find_people_views_default_views() {
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '5' => 0,
-        '4' => 0,
-        '1' => 0,
-        '2' => 0,
+        5 => 0,
+        4 => 0,
+        1 => 0,
+        2 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -2225,10 +2275,9 @@ function extension_find_people_views_default_views() {
   $view->name = 'find_people_node_references';
   $view->description = 'Lists Groups for the Find People Module\'s node references';
   $view->tag = '';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
@@ -2318,10 +2367,9 @@ function extension_find_people_views_default_views() {
   $view->name = 'find_us_page';
   $view->description = 'Creates the Find Us page';
   $view->tag = '';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
@@ -2496,6 +2544,8 @@ function extension_find_people_views_default_views() {
   $handler->override_option('cache', array(
     'type' => 'none',
   ));
+  $handler->override_option('footer_format', '2');
+  $handler->override_option('footer_empty', 0);
   $handler->override_option('items_per_page', 0);
   $handler->override_option('style_plugin', 'grid');
   $handler->override_option('style_options', array(
@@ -2512,17 +2562,24 @@ function extension_find_people_views_default_views() {
   $handler = $view->new_display('page', 'Find Us Page', 'page_1');
   $handler->override_option('title', 'Find Us');
   $handler->override_option('header', '<div class="extension-address">
-  <div class="title">OSU Extension Service</div>
+
+  <div class="title">OSU Extension Service <br />Administration</div>
   <div class="address">
     Oregon State University <br />
     101 Ballard Hall <br />
     Corvallis, OR 97331-3606
   </div>
+  
   <div class="tel">tel: 541-737-2713</div>
   <div class="fax">fax: 541-737-4423</div>
+  
+  <div class="state-wide-contacts"><br /> <br />
+     To contact your local office select <br />one of the links below.
+   </div>
+   
 </div>');
   $handler->override_option('header_format', '2');
-  $handler->override_option('header_empty', 0);
+  $handler->override_option('header_empty', 1);
   $handler->override_option('path', 'find-us');
   $handler->override_option('menu', array(
     'type' => 'normal',
@@ -2809,8 +2866,6 @@ function extension_find_people_views_default_views() {
   <img src="sites/default/files/openlayers/combined.png" width="10" height="10"> Combined Experiment & Extension Center Locations <br />
   <img src="sites/default/files/openlayers/branch.png" width="10" height="10"> Branch Experiment Station Locations
 </div>');
-  $handler->override_option('footer_format', '2');
-  $handler->override_option('footer_empty', 0);
   $handler->override_option('style_plugin', 'openlayers_map');
   $handler->override_option('style_options', array(
     'preset' => 'find_us_map',
@@ -3504,10 +3559,9 @@ function extension_find_people_views_default_views() {
   $view->name = 'find_us_search';
   $view->description = 'creates search block and displays results';
   $view->tag = '';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
@@ -3657,12 +3711,12 @@ function extension_find_people_views_default_views() {
       'field' => 'null',
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
-        '2' => 0,
-        '5' => 0,
-        '4' => 0,
-        '3' => 0,
-        '8' => 0,
-        '6' => 0,
+        2 => 0,
+        5 => 0,
+        4 => 0,
+        3 => 0,
+        8 => 0,
+        6 => 0,
       ),
       'relationship' => 'none',
       'default_options_div_prefix' => '',
@@ -3694,10 +3748,10 @@ return TRUE;
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '5' => 0,
-        '4' => 0,
-        '1' => 0,
-        '2' => 0,
+        5 => 0,
+        4 => 0,
+        1 => 0,
+        2 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -4123,10 +4177,9 @@ if ($_GET[\'title\'] != \'\') : ?>
   $view->name = 'people_by_location_feed';
   $view->description = 'creates feed for use on County/AES sites';
   $view->tag = '';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('relationships', array(
@@ -4234,7 +4287,7 @@ if ($_GET[\'title\'] != \'\') : ?>
       'empty_zero' => 0,
       'link_to_node' => 0,
       'label_type' => 'custom',
-      'format' => 'employee_photo_default',
+      'format' => 'thumbnail_100_default',
       'multiple' => array(
         'group' => TRUE,
         'multiple_number' => '',
@@ -4548,7 +4601,7 @@ if ($_GET[\'title\'] != \'\') : ?>
     'field_employee_leader_value' => array(
       'label' => 'AdminLeader',
       'alter' => array(
-        'alter_text' => 1,
+        'alter_text' => 0,
         'text' => '1',
         'make_link' => 0,
         'path' => '',
@@ -4570,7 +4623,7 @@ if ($_GET[\'title\'] != \'\') : ?>
       'empty_zero' => 1,
       'link_to_node' => 0,
       'label_type' => 'custom',
-      'format' => 'default',
+      'format' => 'unformatted',
       'multiple' => array(
         'group' => TRUE,
         'multiple_number' => '',
@@ -4653,11 +4706,11 @@ if ($_GET[\'title\'] != \'\') : ?>
       'field' => 'nid',
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
-        '2' => 0,
-        '5' => 0,
-        '4' => 0,
-        '3' => 0,
-        '6' => 0,
+        2 => 0,
+        5 => 0,
+        4 => 0,
+        3 => 0,
+        6 => 0,
       ),
       'relationship' => 'field_employee_groups_nid',
       'default_options_div_prefix' => '',
@@ -4685,10 +4738,10 @@ if ($_GET[\'title\'] != \'\') : ?>
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '5' => 0,
-        '4' => 0,
-        '1' => 0,
-        '2' => 0,
+        5 => 0,
+        4 => 0,
+        1 => 0,
+        2 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -5252,11 +5305,11 @@ if ($_GET[\'title\'] != \'\') : ?>
       'field' => 'nid',
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
-        '2' => 0,
-        '5' => 0,
-        '4' => 0,
-        '3' => 0,
-        '6' => 0,
+        2 => 0,
+        5 => 0,
+        4 => 0,
+        3 => 0,
+        6 => 0,
       ),
       'override' => array(
         'button' => 'Use default',
@@ -5287,11 +5340,11 @@ if ($_GET[\'title\'] != \'\') : ?>
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '5' => 0,
-        '4' => 0,
-        '6' => 0,
-        '1' => 0,
-        '2' => 0,
+        5 => 0,
+        4 => 0,
+        6 => 0,
+        1 => 0,
+        2 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
