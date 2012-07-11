@@ -29,3 +29,21 @@ function extension_find_people_theme_registry_alter(&$theme_registry) {
   $modulepath = drupal_get_path('module', 'extension_find_people') . '/theme';
   array_unshift($theme_registry[node]['theme paths'], $modulepath);
 }
+
+/**
+* Implementation of hook_form_alter().
+*/
+function extension_find_people_form_alter(&$form, $form_state, $form_id) {
+
+  switch ($form_id) {
+    case 'employee_node_form':
+      //$output .= dpm($form);
+      
+      // unset delete button for non-admins
+      global $user;
+      if (!in_array('administrator', array_values($user->roles))) { 
+        unset($form['buttons']['delete']);
+      }
+    break;
+  }
+}
