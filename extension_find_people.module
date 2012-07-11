@@ -22,7 +22,6 @@ function extension_find_people_preprocess_node(&$variables) {
   }
 }
 
-
 /**
  * Implementation of hook_theme_registry_alter().
  */

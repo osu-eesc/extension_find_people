@@ -13,6 +13,22 @@ function extension_find_people_content_default_fields() {
     'display_settings' => array(
       'weight' => '5',
       'parent' => '',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -21,22 +37,6 @@ function extension_find_people_content_default_fields() {
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -80,6 +80,22 @@ function extension_find_people_content_default_fields() {
     'display_settings' => array(
       'weight' => '1',
       'parent' => '',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'hidden',
+        'exclude' => 1,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -88,22 +104,6 @@ function extension_find_people_content_default_fields() {
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -139,8 +139,24 @@ function extension_find_people_content_default_fields() {
     'field_name' => 'field_employee_employer',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '8',
-      'parent' => '',
+      'weight' => '10',
+      'parent' => 'group_admin_information',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -151,22 +167,6 @@ function extension_find_people_content_default_fields() {
       'full' => array(
         'format' => 'default',
         'exclude' => 1,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
-        'format' => 'default',
-        'exclude' => 0,
       ),
       'token' => array(
         'format' => 'default',
@@ -196,7 +196,7 @@ College of Agricultural Sciences',
       'rows' => '5',
       'size' => 60,
       'label' => 'Employer',
-      'weight' => '8',
+      'weight' => '10',
       'description' => 'Indicate who this person is employed by.',
       'type' => 'optionwidgets_select',
       'module' => 'optionwidgets',
@@ -210,6 +210,22 @@ College of Agricultural Sciences',
     'display_settings' => array(
       'weight' => '-4',
       'parent' => '',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -218,22 +234,6 @@ College of Agricultural Sciences',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -277,6 +277,22 @@ College of Agricultural Sciences',
     'display_settings' => array(
       'weight' => '-1',
       'parent' => '',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -285,22 +301,6 @@ College of Agricultural Sciences',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -358,8 +358,24 @@ College of Agricultural Sciences',
     'field_name' => 'field_employee_is_supervisor',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '7',
-      'parent' => '',
+      'weight' => '13',
+      'parent' => 'group_admin_information',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'hidden',
       ),
@@ -370,22 +386,6 @@ College of Agricultural Sciences',
       'full' => array(
         'format' => 'default',
         'exclude' => 1,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
-        'format' => 'default',
-        'exclude' => 0,
       ),
       'token' => array(
         'format' => 'default',
@@ -413,8 +413,8 @@ College of Agricultural Sciences',
       ),
       'default_value_php' => NULL,
       'label' => 'Supervisor',
-      'weight' => '7',
-      'description' => '',
+      'weight' => '13',
+      'description' => 'If checked the person will be displayed in supervisor select list in web forms like the Out of State Travel form.',
       'type' => 'optionwidgets_onoff',
       'module' => 'optionwidgets',
     ),
@@ -427,6 +427,22 @@ College of Agricultural Sciences',
     'display_settings' => array(
       'weight' => '-3',
       'parent' => '',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -435,22 +451,6 @@ College of Agricultural Sciences',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -492,8 +492,24 @@ College of Agricultural Sciences',
     'field_name' => 'field_employee_leader',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '6',
-      'parent' => '',
+      'weight' => '12',
+      'parent' => 'group_admin_information',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'hidden',
       ),
@@ -504,22 +520,6 @@ College of Agricultural Sciences',
       'full' => array(
         'format' => 'default',
         'exclude' => 1,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
-        'format' => 'default',
-        'exclude' => 0,
       ),
       'token' => array(
         'format' => 'default',
@@ -547,8 +547,8 @@ College of Agricultural Sciences',
       ),
       'default_value_php' => NULL,
       'label' => 'Admin/Leader',
-      'weight' => '6',
-      'description' => '',
+      'weight' => '12',
+      'description' => 'If checked this person will display above the rest of the staff in the group/directory page. ',
       'type' => 'optionwidgets_onoff',
       'module' => 'optionwidgets',
     ),
@@ -561,6 +561,22 @@ College of Agricultural Sciences',
     'display_settings' => array(
       'weight' => '3',
       'parent' => '',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -569,22 +585,6 @@ College of Agricultural Sciences',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -626,34 +626,34 @@ College of Agricultural Sciences',
     'field_name' => 'field_employee_notes',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '11',
-      'parent' => '',
-      'label' => array(
-        'format' => 'above',
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
+      'weight' => '15',
+      'parent' => 'group_admin_information',
       '2' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
       '3' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
       ),
       'token' => array(
         'format' => 'default',
@@ -681,10 +681,77 @@ College of Agricultural Sciences',
       ),
       'default_value_php' => NULL,
       'label' => 'Notes',
-      'weight' => '11',
+      'weight' => '15',
       'description' => '',
       'type' => 'text_textarea',
       'module' => 'text',
+    ),
+  );
+
+  // Exported field: field_employee_oe_admin
+  $fields['employee-field_employee_oe_admin'] = array(
+    'field_name' => 'field_employee_oe_admin',
+    'type_name' => 'employee',
+    'display_settings' => array(
+      'weight' => '14',
+      'parent' => 'group_admin_information',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'label' => array(
+        'format' => 'hidden',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'number_integer',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'number',
+    'active' => '1',
+    'prefix' => '',
+    'suffix' => '',
+    'min' => '',
+    'max' => '',
+    'allowed_values' => '0|No
+1|Outreach Admin',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => 0,
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'O & E Administrator',
+      'weight' => '14',
+      'description' => 'Check if person is an Outreach Admin or Regional Administrator. This adds them to the Leadership page on the Outreach and Engagement site.',
+      'type' => 'optionwidgets_onoff',
+      'module' => 'optionwidgets',
     ),
   );
 
@@ -695,6 +762,22 @@ College of Agricultural Sciences',
     'display_settings' => array(
       'weight' => '2',
       'parent' => '',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -703,22 +786,6 @@ College of Agricultural Sciences',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -762,6 +829,22 @@ College of Agricultural Sciences',
     'display_settings' => array(
       'weight' => 0,
       'parent' => '',
+      '2' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -771,22 +854,6 @@ College of Agricultural Sciences',
       ),
       'full' => array(
         'format' => 'employee_photo_default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
-      ),
-      '3' => array(
-        'format' => 'image_plain',
         'exclude' => 0,
       ),
       'token' => array(
@@ -841,8 +908,24 @@ College of Agricultural Sciences',
     'field_name' => 'field_employee_status',
     'type_name' => 'employee',
     'display_settings' => array(
-      'weight' => '9',
-      'parent' => '',
+      'weight' => '11',
+      'parent' => 'group_admin_information',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -851,22 +934,6 @@ College of Agricultural Sciences',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -895,7 +962,7 @@ Retired',
       ),
       'default_value_php' => NULL,
       'label' => 'Status',
-      'weight' => '9',
+      'weight' => '11',
       'description' => '',
       'type' => 'optionwidgets_select',
       'module' => 'optionwidgets',
@@ -909,6 +976,22 @@ Retired',
     'display_settings' => array(
       'weight' => '-2',
       'parent' => '',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -917,22 +1000,6 @@ Retired',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -976,6 +1043,22 @@ Retired',
     'display_settings' => array(
       'weight' => '4',
       'parent' => '',
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -984,22 +1067,6 @@ Retired',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -2222,6 +2289,7 @@ off|Off Campus',
   t('Last Name');
   t('Mobile Phone');
   t('Notes');
+  t('O & E Administrator');
   t('Office Phone');
   t('On/Off Campus');
   t('Phone');

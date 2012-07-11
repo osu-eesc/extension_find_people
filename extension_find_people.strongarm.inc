@@ -73,7 +73,7 @@ function extension_find_people_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_employee';
-  $strongarm->value = 0;
+  $strongarm->value = '0';
   $export['comment_anonymous_employee'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -201,19 +201,19 @@ function extension_find_people_strongarm() {
   $strongarm->name = 'content_extra_weights_employee';
   $strongarm->value = array(
     'title' => '-5',
-    'revision_information' => '10',
-    'author' => '19',
-    'options' => '18',
-    'comment_settings' => '23',
-    'menu' => '20',
-    'book' => '21',
-    'path' => '17',
-    'path_redirect' => '12',
-    'find_people_employee_locations_node_content_2' => '13',
-    'find_people_employee_locations_node_content_1' => '15',
-    'find_people_employee_locations_node_content_3' => '14',
-    'find_people_employee_locations_node_content_4' => '16',
-    'xmlsitemap' => '22',
+    'revision_information' => '8',
+    'author' => '15',
+    'options' => '7',
+    'comment_settings' => '19',
+    'menu' => '16',
+    'book' => '17',
+    'path' => '14',
+    'path_redirect' => '9',
+    'find_people_employee_locations_node_content_2' => '10',
+    'find_people_employee_locations_node_content_1' => '12',
+    'find_people_employee_locations_node_content_3' => '11',
+    'find_people_employee_locations_node_content_4' => '13',
+    'xmlsitemap' => '18',
   );
   $export['content_extra_weights_employee'] = $strongarm;
 
@@ -274,7 +274,7 @@ function extension_find_people_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'form_build_id_employee';
-  $strongarm->value = 'form-bd1ffca39b2192fd0db76d7b62edb939';
+  $strongarm->value = 'form-a6ab1f1d88358334c14f673842e4c772';
   $export['form_build_id_employee'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -318,8 +318,7 @@ function extension_find_people_strongarm() {
   $strongarm->name = 'node_options_employee';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
-    2 => 'revision',
+    1 => 'revision',
   );
   $export['node_options_employee'] = $strongarm;
 
