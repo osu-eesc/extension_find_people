@@ -58,7 +58,8 @@ function extension_find_people_fieldgroup_default_groups() {
       '2' => 'field_employee_leader',
       '3' => 'field_employee_is_supervisor',
       '4' => 'field_employee_oe_admin',
-      '5' => 'field_employee_notes',
+      '5' => 'field_onid_username',
+      '6' => 'field_employee_notes',
     ),
   );
 

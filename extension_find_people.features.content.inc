@@ -681,7 +681,7 @@ College of Agricultural Sciences',
       ),
       'default_value_php' => NULL,
       'label' => 'Notes',
-      'weight' => '15',
+      'weight' => '16',
       'description' => '',
       'type' => 'text_textarea',
       'module' => 'text',
@@ -1108,6 +1108,72 @@ Retired',
       'description' => '',
       'type' => 'link',
       'module' => 'link',
+    ),
+  );
+
+  // Exported field: field_onid_username
+  $fields['employee-field_onid_username'] = array(
+    'field_name' => 'field_onid_username',
+    'type_name' => 'employee',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => '',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'rows' => 5,
+      'size' => '60',
+      'default_value' => array(
+        '0' => array(
+          'value' => '',
+          '_error_element' => 'default_value_widget][field_onid_username][0][value',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'ONID/DINO username',
+      'weight' => '15',
+      'description' => 'Used for matching record to ONID/DINO username',
+      'type' => 'text_textfield',
+      'module' => 'text',
     ),
   );
 
@@ -2290,6 +2356,7 @@ off|Off Campus',
   t('Mobile Phone');
   t('Notes');
   t('O & E Administrator');
+  t('ONID/DINO username');
   t('Office Phone');
   t('On/Off Campus');
   t('Phone');
